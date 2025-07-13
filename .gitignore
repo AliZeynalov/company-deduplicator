@@ -15,3 +15,6 @@ build/
 *.swp
 *.swo
 *~
+
+# History files
+.history/
