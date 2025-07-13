@@ -34,10 +34,10 @@ export interface CompanyMatch {
  * Methods used to find matches
  */
 export type MatchMethod = 
-  | 'exact_after_normalization'     // Perfect match after cleaning
-  | 'high_similarity'               // High string similarity
-  | 'token_match'                   // Word-level matching
-  | 'partial_match';                // Substring matching
+  | 'exact_after_normalization'     // Exact match after normalizing the strings
+  | 'high_similarity'               // High similarity
+  | 'token_match'                   // Word matching
+  | 'partial_match';                // Substring match
 
 /**
  * A group of duplicates for one company
