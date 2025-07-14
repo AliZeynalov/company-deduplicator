@@ -79,7 +79,6 @@ function showHelp(): void {
 
 /** Entry point  */
 function main(): void {
-  console.log('main: ', require.main?.filename);
   let args: ParsedArgs;
   try {
     console.log('\nprocess.argv: ', process.argv);

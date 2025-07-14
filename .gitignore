@@ -9,12 +9,6 @@ dist/
 build/
 *.tsbuildinfo
 
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
 
 # History files
 .history/

@@ -158,8 +158,7 @@ export function findAllMatches(
   combined.push(...findHighSimilarityMatches(original, candidates, config));
   combined.push(...findTokenMatches(original, candidates, config));
   combined.push(...findPartialMatches(original, candidates, config));
-  console.log('\noriginal: ', original);
-  console.log('combined: ', combined);
+
   const bestMap = new Map<string, CompanyMatch>();
   for (const match of combined) {
     const existing = bestMap.get(match.candidate);

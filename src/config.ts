@@ -4,9 +4,6 @@
 
 import { DeduplicationConfig, ConfigPreset } from './types';
 
-/**
- * Preset configurations
- */
 export const CONFIG_PRESETS: Record<ConfigPreset, DeduplicationConfig> = {
   conservative: {
     highSimilarityThreshold: 0.92,

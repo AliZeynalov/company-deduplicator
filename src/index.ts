@@ -31,12 +31,10 @@ export type {
 
 // ---------------------------------------------------------------------------
 // If this file is executed directly (e.g. `node dist/index.js file.txt`) we
-// delegate to the CLI so users get the same behaviour whether they call
+// delegate to the CLI so users get the same bahevior whether they call
 // `dist/cli.js` or `dist/index.js`.
 // ---------------------------------------------------------------------------
 console.log('index.ts: ', require.main);
 if (require.main === module) {
-  // dynamic import avoids circular dependency at compile-time
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
   require('./cli');
 } 
