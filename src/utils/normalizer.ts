@@ -83,6 +83,7 @@ export function extractTokens(normalizedName: string): string[] {
 
 /**
  * Checks if two company names are probably the same company but different offices
+ * DID NOT IMPLEMENT THIS YET  - WORRIED ABOUT FALSE POSITIVES, MIGHT RETHINK LATER
  */
 export function isLikelyGeographicVariant(name1: string, name2: string): boolean {
   const tokens1 = new Set(name1.toLowerCase().split(' '));
