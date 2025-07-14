@@ -66,13 +66,13 @@ npm run dev data/companies.txt --format csv -o duplicates.csv
 
 ## Configuration presets
 
-| Preset        | High Sim | Token | Partial | Min Confidence | Max results |
+| Preset        | High Similarity | Token (word) | Partial | Min Confidence | Max results |
 |---------------|---------:|------:|--------:|---------------:|------------:|
 | Conservative  | 0.92     | 0.88  | 0.85    | 0.85           | 5           |
 | Balanced (default)| 0.85 | 0.80  | 0.70    | 0.75           | 10          |
 | Aggressive    | 0.78     | 0.70  | 0.60    | 0.60           | 15          |
 
-You can override any field via CLI flags or programmatically.
+It's possible to override any field via CLI flags or programmatically.
 
 ---
 
