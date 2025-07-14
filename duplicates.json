@@ -1,0 +1,408 @@
+{
+  "totalCompanies": 135,
+  "duplicateGroups": [
+    {
+      "original": "1010101",
+      "duplicates": [
+        {
+          "original": "1010101",
+          "candidate": "10101 Software",
+          "confidence": 0.714,
+          "method": "partial_match",
+          "normalizedOriginal": "1010101",
+          "normalizedCandidate": "10101"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "011 Games",
+      "duplicates": [
+        {
+          "original": "011 Games",
+          "candidate": "1011",
+          "confidence": 0.75,
+          "method": "partial_match",
+          "normalizedOriginal": "011",
+          "normalizedCandidate": "1011"
+        },
+        {
+          "original": "011 Games",
+          "candidate": "01 Games",
+          "confidence": 0.667,
+          "method": "partial_match",
+          "normalizedOriginal": "011",
+          "normalizedCandidate": "01"
+        },
+        {
+          "original": "011 Games",
+          "candidate": "01 Studio",
+          "confidence": 0.667,
+          "method": "partial_match",
+          "normalizedOriginal": "011",
+          "normalizedCandidate": "01"
+        }
+      ],
+      "totalMatches": 3
+    },
+    {
+      "original": "027 Studios",
+      "duplicates": [
+        {
+          "original": "027 Studios",
+          "candidate": "02 studios",
+          "confidence": 0.667,
+          "method": "partial_match",
+          "normalizedOriginal": "027",
+          "normalizedCandidate": "02"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "0 Deer Soft",
+      "duplicates": [
+        {
+          "original": "0 Deer Soft",
+          "candidate": "0 Deer Soft Partnership",
+          "confidence": 0.75,
+          "method": "token_match",
+          "normalizedOriginal": "0 deer soft",
+          "normalizedCandidate": "0 deer soft partnership"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "0Space",
+      "duplicates": [
+        {
+          "original": "0Space",
+          "candidate": "10Space",
+          "confidence": 0.857,
+          "method": "high_similarity",
+          "normalizedOriginal": "0space",
+          "normalizedCandidate": "10space"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "1",
+      "duplicates": [
+        {
+          "original": "1",
+          "candidate": "1+1 Studios",
+          "confidence": 1,
+          "method": "token_match",
+          "normalizedOriginal": "1",
+          "normalizedCandidate": "1 1"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "1001 Studio",
+      "duplicates": [
+        {
+          "original": "1001 Studio",
+          "candidate": "10101 Software",
+          "confidence": 0.8,
+          "method": "high_similarity",
+          "normalizedOriginal": "1001",
+          "normalizedCandidate": "10101"
+        },
+        {
+          "original": "1001 Studio",
+          "candidate": "100 GAMES",
+          "confidence": 0.75,
+          "method": "partial_match",
+          "normalizedOriginal": "1001",
+          "normalizedCandidate": "100"
+        },
+        {
+          "original": "1001 Studio",
+          "candidate": "100 РЕНТГЕН",
+          "confidence": 0.75,
+          "method": "partial_match",
+          "normalizedOriginal": "1001",
+          "normalizedCandidate": "100"
+        }
+      ],
+      "totalMatches": 3
+    },
+    {
+      "original": "100Hr Games",
+      "duplicates": [
+        {
+          "original": "100Hr Games",
+          "candidate": "100Hr Games Inc.",
+          "confidence": 1,
+          "method": "exact_after_normalization",
+          "normalizedOriginal": "100hr",
+          "normalizedCandidate": "100hr"
+        },
+        {
+          "original": "100Hr Games",
+          "candidate": "100 GAMES",
+          "confidence": 0.6,
+          "method": "partial_match",
+          "normalizedOriginal": "100hr",
+          "normalizedCandidate": "100"
+        },
+        {
+          "original": "100Hr Games",
+          "candidate": "100 РЕНТГЕН",
+          "confidence": 0.6,
+          "method": "partial_match",
+          "normalizedOriginal": "100hr",
+          "normalizedCandidate": "100"
+        }
+      ],
+      "totalMatches": 3
+    },
+    {
+      "original": "1010 Games",
+      "duplicates": [
+        {
+          "original": "1010 Games",
+          "candidate": "10101 Software",
+          "confidence": 0.8,
+          "method": "high_similarity",
+          "normalizedOriginal": "1010",
+          "normalizedCandidate": "10101"
+        },
+        {
+          "original": "1010 Games",
+          "candidate": "10:10 Games Ltd",
+          "confidence": 0.8,
+          "method": "high_similarity",
+          "normalizedOriginal": "1010",
+          "normalizedCandidate": "10 10"
+        },
+        {
+          "original": "1010 Games",
+          "candidate": "101.Studio",
+          "confidence": 0.75,
+          "method": "partial_match",
+          "normalizedOriginal": "1010",
+          "normalizedCandidate": "101"
+        }
+      ],
+      "totalMatches": 3
+    },
+    {
+      "original": "1015",
+      "duplicates": [
+        {
+          "original": "1015",
+          "candidate": "101.Studio",
+          "confidence": 0.75,
+          "method": "partial_match",
+          "normalizedOriginal": "1015",
+          "normalizedCandidate": "101"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "101XP",
+      "duplicates": [
+        {
+          "original": "101XP",
+          "candidate": "101.Studio",
+          "confidence": 0.6,
+          "method": "partial_match",
+          "normalizedOriginal": "101xp",
+          "normalizedCandidate": "101"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "1029studio",
+      "duplicates": [
+        {
+          "original": "1029studio",
+          "candidate": "10nstudio",
+          "confidence": 0.8,
+          "method": "high_similarity",
+          "normalizedOriginal": "1029studio",
+          "normalizedCandidate": "10nstudio"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "107",
+      "duplicates": [
+        {
+          "original": "107",
+          "candidate": "10 games studios",
+          "confidence": 0.667,
+          "method": "partial_match",
+          "normalizedOriginal": "107",
+          "normalizedCandidate": "10"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "10F",
+      "duplicates": [
+        {
+          "original": "10F",
+          "candidate": "10ft Games",
+          "confidence": 0.75,
+          "method": "partial_match",
+          "normalizedOriginal": "10f",
+          "normalizedCandidate": "10ft"
+        },
+        {
+          "original": "10F",
+          "candidate": "10 games studios",
+          "confidence": 0.667,
+          "method": "partial_match",
+          "normalizedOriginal": "10f",
+          "normalizedCandidate": "10"
+        }
+      ],
+      "totalMatches": 2
+    },
+    {
+      "original": "110 Industries",
+      "duplicates": [
+        {
+          "original": "110 Industries",
+          "candidate": "1122 Industries",
+          "confidence": 0.867,
+          "method": "high_similarity",
+          "normalizedOriginal": "110 industries",
+          "normalizedCandidate": "1122 industries"
+        },
+        {
+          "original": "110 Industries",
+          "candidate": "110 Industries SA",
+          "confidence": 0.824,
+          "method": "high_similarity",
+          "normalizedOriginal": "110 industries",
+          "normalizedCandidate": "110 industries sa"
+        }
+      ],
+      "totalMatches": 2
+    },
+    {
+      "original": "11/10 games",
+      "duplicates": [
+        {
+          "original": "11/10 games",
+          "candidate": "10:10 Games Ltd",
+          "confidence": 0.8,
+          "method": "high_similarity",
+          "normalizedOriginal": "11 10",
+          "normalizedCandidate": "10 10"
+        },
+        {
+          "original": "11/10 games",
+          "candidate": "1+1 Studios",
+          "confidence": 0.6,
+          "method": "partial_match",
+          "normalizedOriginal": "11 10",
+          "normalizedCandidate": "1 1"
+        }
+      ],
+      "totalMatches": 2
+    },
+    {
+      "original": "1/13s",
+      "duplicates": [
+        {
+          "original": "1/13s",
+          "candidate": "1+1 Studios",
+          "confidence": 0.6,
+          "method": "partial_match",
+          "normalizedOriginal": "1 13s",
+          "normalizedCandidate": "1 1"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "original": "#12",
+      "duplicates": [
+        {
+          "original": "#12",
+          "candidate": "123 studio",
+          "confidence": 0.667,
+          "method": "partial_match",
+          "normalizedOriginal": "12",
+          "normalizedCandidate": "123"
+        },
+        {
+          "original": "#12",
+          "candidate": "123工作室",
+          "confidence": 0.667,
+          "method": "partial_match",
+          "normalizedOriginal": "12",
+          "normalizedCandidate": "123"
+        },
+        {
+          "original": "#12",
+          "candidate": "125",
+          "confidence": 0.667,
+          "method": "partial_match",
+          "normalizedOriginal": "12",
+          "normalizedCandidate": "125"
+        }
+      ],
+      "totalMatches": 3
+    },
+    {
+      "original": "12318",
+      "duplicates": [
+        {
+          "original": "12318",
+          "candidate": "123 studio",
+          "confidence": 0.6,
+          "method": "partial_match",
+          "normalizedOriginal": "12318",
+          "normalizedCandidate": "123"
+        },
+        {
+          "original": "12318",
+          "candidate": "123工作室",
+          "confidence": 0.6,
+          "method": "partial_match",
+          "normalizedOriginal": "12318",
+          "normalizedCandidate": "123"
+        }
+      ],
+      "totalMatches": 2
+    },
+    {
+      "original": "Sony Santa Monica",
+      "duplicates": [
+        {
+          "original": "Sony Santa Monica",
+          "candidate": "Santa Monica Studio",
+          "confidence": 0.706,
+          "method": "partial_match",
+          "normalizedOriginal": "sony santa monica",
+          "normalizedCandidate": "santa monica"
+        }
+      ],
+      "totalMatches": 1
+    }
+  ],
+  "processingTimeMs": 53,
+  "config": {
+    "highSimilarityThreshold": 0.78,
+    "tokenMatchThreshold": 0.7,
+    "partialMatchThreshold": 0.6,
+    "removeSuffixes": true,
+    "handleAccents": true,
+    "removeNumbers": false,
+    "minConfidenceScore": 0.6,
+    "maxResultsPerCompany": 15
+  }
+}

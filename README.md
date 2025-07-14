@@ -49,10 +49,17 @@ Options
 ### Example
 
 ```bash
+# Default run (balanced preset, text output to console)
+npm run dev data/companies.txt
+
+# Verbose text output using the conservative preset
 npm run dev data/companies.txt --preset conservative --format text -v
 
-# Save JSON results to a file
-npm run dev data/companies.txt --preset aggressive --format json  -o duplicates.json
+# Save JSON results to a file using aggressive preset
+npm run dev data/companies.txt --preset aggressive --format json -o duplicates.json
+
+# Save CSV results to a file (balanced preset)
+npm run dev data/companies.txt --format csv -o duplicates.csv
 ```
 
 ---
@@ -127,3 +134,5 @@ npm test (or yarn test)
 ### macOS permission (Catalina+)
 
 On macOS 10.15 (Catalina) and later, Terminal / VS Code OR another editor must be granted access to your folder before Node can read files located there.
+
+```
