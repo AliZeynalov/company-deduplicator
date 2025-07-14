@@ -24,10 +24,10 @@ Detects potential duplicate company names in large datasets using a multi-layer 
 
 ##Quick start
 
-unzip company-deduplicator.zip
-cd company-deduplicator
-npm install      or: yarn
-npm run dev examples/companies.txt
+unzip company-deduplicator.zip \
+cd company-deduplicator \
+npm install      or: yarn \
+npm run dev examples/companies.txt \
 
 ---
 
@@ -131,6 +131,4 @@ npm test (or yarn test)
 
 ### macOS permission (Catalina+)
 
-On macOS 10.15 (Catalina) and later, Terminal / VS Code OR another editor must be granted access to your folder before Node can read files located there.
-
-```
+On macOS 10.15 (Catalina) and later, Terminal or code editor must be granted access to your folder before Node can read files located there.
