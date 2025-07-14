@@ -15,21 +15,19 @@ Detects potential duplicate company names in large datasets using a multi-layer 
 
 ---
 
-## Installation
+## Prerequisites
 
-```bash
-# clone and install
-npm install
+• Node.js ≥ 18   (Likely 16 would be fine, too. But it's better to avoid edge cases or any potential issues. For instance, Older build might trigger some security prompts.)
+• npm (comes with Node) --or-- Yarn
 
-# compile TypeScript → dist/
-npm run build
-```
+---
 
-During development you can run the CLI without compiling:
+##Quick start
 
-```bash
-npm run dev <file> [options]
-```
+unzip company-deduplicator.zip
+cd company-deduplicator
+npm install      or: yarn
+npm run dev examples/companies.txt
 
 ---
 
@@ -54,6 +52,12 @@ Options
 npm run dev data/companies.txt \
   --preset conservative \
   --format text -v
+
+# Save JSON results to a file
+npm run dev data/companies.txt \
+--preset aggressive \
+  --format json \
+  -o duplicates.json
 ```
 
 ---
@@ -93,14 +97,14 @@ console.log(result);
 
 ```
 src/
-  cli.ts            # command-line interface
+  cli.ts            # command line interface
   index.ts          # public API & CLI forwarder
   deduplicator.ts   # orchestration engine
   utils/
-    normalizer.ts   # string cleaning helpers
+    normalizer.ts   # normalizing / string cleaning helpers
     matcher.ts      # multi-layer matching algorithms
-    fileReader.ts   # small sync file helpers
-  config.ts         # presets & validation
+    fileReader.ts   # file helpers
+  config.ts         # configs - presets & validation
   types.ts          # shared TypeScript interfaces
   __tests__/        # Jest test suite
 ```
@@ -110,7 +114,7 @@ src/
 ## Running tests
 
 ```bash
-npm test
+npm test (or yarn test)
 ```
 
 ---
