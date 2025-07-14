@@ -124,7 +124,7 @@ npm test (or yarn test)
 ## Future improvements
 
 *   Optimise Levenshtein distance with a specialised library (e.g. `fast-levenshtein`) or SIMD.
-*   Possibly parallel processing for very large datasets
+*   Possibly parallel processing OR chunk the load for very large datasets
 *   Possibly machine-learning scoring model to learn weights automatically.
 *   Interactive review UI to confirm / reject matches.
 ---
