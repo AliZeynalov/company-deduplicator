@@ -50,16 +50,16 @@ Options
 
 ```bash
 # Default run (balanced preset, text output to console)
-npm run dev data/companies.txt
+npm run dev -- data/companies.txt
 
 # Verbose text output using the conservative preset
-npm run dev data/companies.txt --preset conservative --format text -v
+npm run dev -- data/companies.txt --preset conservative --format text -v
 
 # Save JSON results to a file using aggressive preset
-npm run dev data/companies.txt --preset aggressive --format json -o duplicates.json
+npm run de -- data/companies.txt --preset aggressive --format json -o duplicates.json
 
 # Save CSV results to a file (balanced preset)
-npm run dev data/companies.txt --format csv -o duplicates.csv
+npm run dev -- data/companies.txt --format csv -o duplicates.csv
 ```
 
 ---
