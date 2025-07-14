@@ -22,7 +22,7 @@ import {
  * Levenshtein distance (classical dynamic-programming implementation)
  * Returns the minimum number of single-character edits needed to change
  * one string into the other.
- * It's a classic, textbook implementation of the well-known algorithm.
+ * It's a classic, textbook implementation of the well-known algorithm. (https://en.wikipedia.org/wiki/Levenshtein_distance)
  */
 export function calculateLevenshteinDistance(a: string, b: string): number {
   if (a === b) return 0;

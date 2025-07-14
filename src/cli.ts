@@ -152,8 +152,6 @@ function main(): void {
   }
 }
 
-console.log('cli.ts: ', require.main?.id);
-
 
 if (require.main === module) {
   main();  // this means its being run directly, not imported or something as part of some script.

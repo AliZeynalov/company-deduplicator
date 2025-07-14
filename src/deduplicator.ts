@@ -45,7 +45,6 @@ export class CompanyDeduplicator {
     const start = Date.now();
 
     const uniqueCompanies = [...new Set(companies.map(c => c.trim()).filter(Boolean))];
-    console.log('\nunique companies: ', uniqueCompanies);
     const processed = new Set<string>();
     const groups: DuplicateGroup[] = [];
 
