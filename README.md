@@ -7,11 +7,11 @@ Detects potential duplicate company names in large datasets using a multi-layer 
 ## Features
 
 *   String normalisation (case-folding, accent removal, suffix stripping)
-*   Four-layer matching engine (exact, Levenshtein similarity, token overlap, partial substring)
+*   Four-layer matching engine (exact, Levenshtein similarity, token (word) overlap, partial substring)
 *   Configurable presets – **conservative**, **balanced**, **aggressive**
 *   Command-line interface (CLI) with JSON / text / CSV output
 *   Library API for integration in other Node projects
-*   Fully typed, easily testable codebase
+*   Extensively typed, easily testable codebase
 
 ---
 

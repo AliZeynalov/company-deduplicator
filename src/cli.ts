@@ -74,13 +74,15 @@ function parseArgs(argv: string[]): ParsedArgs {
 }
 
 function showHelp(): void {
-  console.log(`Company Deduplicator – CLI\n\nUsage: company-dedupe <file> [options]\n\nOptions:\n  --preset <name>            conservative | balanced | aggressive  (default balanced)\n  --min-similarity <float>   override highSimilarityThreshold (0-1)\n  --min-confidence <float>   override minConfidenceScore (0-1)\n  --format <fmt>             text | json | csv  (default text)\n  -o, --output <file>        save results to file instead of stdout\n  -v, --verbose              extra logging\n  -h, --help                 show this message\n`);
+  console.log(`Company Deduplicator – CLI Guide\n\nUsage: company-deduplicate <file> [options]\n\nOptions:\n  --preset <name>            conservative | balanced | aggressive  (default balanced)\n  --min-similarity <float>   override highSimilarityThreshold (0-1)\n  --min-confidence <float>   override minConfidenceScore (0-1)\n  --format <fmt>             text | json | csv  (default text)\n  -o, --output <file>        save results to file instead of stdout\n  -v, --verbose              extra logging\n  -h, --help                 show this message\n`);
 }
 
-/** Entry point */
+/** Entry point  */
 function main(): void {
+  console.log('main: ', require.main?.filename);
   let args: ParsedArgs;
   try {
+    console.log('\nprocess.argv: ', process.argv);
     args = parseArgs(process.argv);
   } catch (err) {
     console.error('Argument error:', (err as Error).message);
@@ -89,12 +91,15 @@ function main(): void {
     return;
   }
 
+  console.log('\nparsed args (configs): ', args);
+
   if (args.help || !args.file) {
     showHelp();
     return;
   }
 
   const companies = readCompanyNamesFromFile(args.file);
+  console.log('\ncompanies: ', companies);
   if (args.verbose) console.log(`Loaded ${companies.length} companies`);
 
   // Build configuration
@@ -139,10 +144,18 @@ function main(): void {
 
   if (args.out) {
     writeResultsToFile(args.out, output);
-    if (args.verbose) console.log(`Results written to ${args.out}`);
+    if (args.verbose) {
+      console.log(`Results written to ${args.out}`);
+    }
   } else {
+    
     console.log(output);
   }
 }
 
-if (require.main === module) main(); 
+console.log('cli.ts: ', require.main?.id);
+
+
+if (require.main === module) {
+  main();  // this means its being run directly, not imported or something as part of some script.
+} 

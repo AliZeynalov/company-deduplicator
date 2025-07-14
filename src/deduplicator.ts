@@ -44,14 +44,15 @@ export class CompanyDeduplicator {
   findDuplicates(companies: string[]): DeduplicationResult {
     const start = Date.now();
 
-    const unique = [...new Set(companies.map(c => c.trim()).filter(Boolean))];
+    const uniqueCompanies = [...new Set(companies.map(c => c.trim()).filter(Boolean))];
+    console.log('\nunique companies: ', uniqueCompanies);
     const processed = new Set<string>();
     const groups: DuplicateGroup[] = [];
 
-    for (const company of unique) {
+    for (const company of uniqueCompanies) {
       if (processed.has(company)) continue;
 
-      const matches = findAllMatches(company, unique, this.config);
+      const matches = findAllMatches(company, uniqueCompanies, this.config);
       if (matches.length) {
         groups.push({
           original: company,
@@ -65,7 +66,7 @@ export class CompanyDeduplicator {
     }
 
     return {
-      totalCompanies: unique.length,
+      totalCompanies: uniqueCompanies.length,
       duplicateGroups: groups,
       processingTimeMs: Date.now() - start,
       config: this.getConfig()

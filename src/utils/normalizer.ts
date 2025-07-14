@@ -19,7 +19,8 @@ const GEOGRAPHIC_TERMS = [
   'europe', 'european', 'asia', 'asian', 'japan', 'japanese', 'china', 'chinese',
   'france', 'french', 'germany', 'german', 'italy', 'italian', 'spain', 'spanish',
   'montreal', 'toronto', 'vancouver', 'london', 'paris', 'berlin', 'tokyo', 'shanghai',
-  'emea', 'benelux', 'oecd'
+  'munich', 'emea', 'benelux', 'oecd', 'istanbul', 'amsterdam', 'brussels', 'madrid',
+  'rome', 'stockholm', 'warsaw', 'zurich'
 ];
 
 /**
@@ -81,7 +82,7 @@ export function extractTokens(normalizedName: string): string[] {
 }
 
 /**
- * Checks if two company names are likely the same company but different offices
+ * Checks if two company names are probably the same company but different offices
  */
 export function isLikelyGeographicVariant(name1: string, name2: string): boolean {
   const tokens1 = new Set(name1.toLowerCase().split(' '));
