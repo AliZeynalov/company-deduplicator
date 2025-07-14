@@ -49,15 +49,10 @@ Options
 ### Example
 
 ```bash
-npm run dev data/companies.txt \
-  --preset conservative \
-  --format text -v
+npm run dev data/companies.txt --preset conservative --format text -v
 
 # Save JSON results to a file
-npm run dev data/companies.txt \
---preset aggressive \
-  --format json \
-  -o duplicates.json
+npm run dev data/companies.txt --preset aggressive --format json  -o duplicates.json
 ```
 
 ---
